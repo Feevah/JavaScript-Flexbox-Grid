@@ -252,15 +252,29 @@
 // console.log (isEven(6))
 
 
-function factorial(num){
-	var result = 1;
-	
-	for(var i = 2; i <= num; i++){
-		result = result * i;
-	} 
-}
+// function factorial(num){
+// 	var result = 1;
+
+// 	var i = 2; 
+
+// 	While (i <= num) {i++; result * i;};
+
+// 	return result 
+// }
 
 // console.log (factorial(6))
 
+
+
+// THE RANDOM NUMBER GUESSER
+
+var go = prompt()
+
+function prize (num) {
+	var random = Math.random();
+	random = Math.pow
+	var multiply = random * 100;
+	if (go === multiply)
+}
 
 
