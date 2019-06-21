@@ -1,280 +1,77 @@
 "use strict"
 
-// var z = 2
 
-// console.log (((z + 5)*2)%2)
+// make an array of 10 grocery store items loop through that array and log each item.
+// loop through a string at least 10 characters long and log each character
+// make that string upper case
 
-// if ((((z + 5)*2)%3) === 0) {console.log ("you da man");}
-// else {console.log ("ooooof");}
+// Create an inventory array and associate a number with each item. Then get user input that purchases items (subtracts one from the item).
 
+// Grocery Store app
+// functions:
+// add to inventory
+// subtract from inventory
+// Notify when out of stock
+// data:
+// inventory
+// inventory count
 
+var dogs = ["Boxers", "Laboradors", "Boycin Spaniel", "Poodle", "ShitzZu"]
 
+console.log (dogs)
 
+dogs[2] = "Boykin Spaniel"
 
-// var i = 0
+dogs[1] = "Labrador"
 
-// for (i; i<50; ++i) {console.log (i);}
+dogs [4] = "Shih Tzu"
 
-// while (i<50) {i++, console.log (i++ );}
+console.log (dogs)
 
+dogs [1] = "Labradors"
 
-// while (i <100 && i % 3 === 0) {i++; console.log ("fizz");}
+dogs [2] = "Boykin Spaniels"
 
-// if ((i % 3) === 0) {console.log("fizz");}
+dogs [3] = "Poodles"
 
+dogs [4] = "Shih Tzu's"
 
-// while(i<100) { i++; if (i % 3 === 0) {console.log("fizz")};}
-// while(i<100) {i++; if (i % 5 === 0) {console.log("buzz")};}
-// while(i<100) {i++; if (i % 5 === 0 && i % 3 ===0) {console.log("fizzbuzz")};}
+console.log (dogs)
 
+dogs.push ("Border Collies")
+ 
+console.log(dogs)
 
-// while(i<100) {
-//   if (i % 3 === 0) {console.log(i, "fizz");}
-//   if (i % 5 === 0) {console.log(i, " buzz");}
-//   if (i % 5 === 0 && i % 3 ===0) {console.log(i, " fizzbuzz");}
-//   i++;
-// }
+dogs.push ("Grayhounds")
 
+console.log(dogs)
 
-// Function Definition
-// function wakeUp (time, alarm) {
-    
-//     if(time === 4) {
-//         console.log("whisper: Im 'hitting the gym'");
-        
-//     } else {
-//         console.log("Its too early going back to sleep");
-//     }
-    
-//     if(alarm) {
-//         turnOffAlarm();
-//     }
-// }
+dogs.pop ()
 
-// // Function Expression
-// var turnOffAlarm = function () {
-//     console.log("that alarm is super annoying");
-// }
+console.log (dogs)
 
-// // Call Functions
-// wakeUp(12, true);
+dogs.push ("Greyhounds")
 
+console.log (dogs)
 
+dogs.push ("Rottweilers", "German Shepherds")
 
-// function castSpell () {
-//     console.log("Shoot fireball");
-// }
-// function dragonFightBack () {
-//     console.log("Bite at the wizard")
-// }
+console.log (dogs)
 
-// function setScene() {
-//     console.log("A wizard is confronted by a big dragon.");
-// }
+dogs.unshift ("Bulldogs")
 
-// function gameOver() {
-//     console.log("wizard wins!");
-// }
+console.log (dogs)
 
+dogs.unshift("Fraggles")
 
-// function fight(turn, turnNumber) {
-//     if (turnNumber === 0) {
-//         setScene();
-//     }
-//     console.log("It is the", turn + "'s turn")
+console.log (dogs)
 
-//     if(turn === "wizard") {
-//         castSpell();
+dogs.shift()
 
-//     } else if (turn === "dragon") {
-//         dragonFightBack();
-//     } else if(turnNumber === "end") {
-//         gameOver();
-//     }
-// }
+console.log(dogs)
 
+dogs.indexOf ("suuppa")
 
-// for(var i = 0; i < 5; i ++) {
-//     if(i === 4 ) {
-//         fight("", "end");
-//     } else if (i % 2 === 0) {
-//         fight("wizard", i);
-//     } else {
-//         fight("dragon", i);
-//     }
+dogs.indexOf ("Poodles")
 
-// }
-
-// create a function that takes two arguments and adds them together
-// create a function that takes two arguments and multiplies them together
-// create a function that takes two arguments where the first argument is the start number and the second argument is the end number. The body of the function starts a loop and ends it at the second argument and logs every number between the start and end number.
-// create a variable in the global scope
-// create a function that takes an argument
-// add the argument to the global variable
-// log the return of that function
-// create an IIFE that logs your success of creating an IIFE
-
-
-
-// function sipo (num1, num2) {
-
-// 	var num3 = num1 + num2;
-
-// 	console.log(num3);
-
-
-
-
-// }
-
-// sipo (10, 7);
-
-
-// function mult (yo, ye) {
-// 	var times = yo * ye;
-// 	console.log (times);
-// }
-
-// mult (5, 4);
-
-
-// function vroom (ze, bee) {
-// 	// var go = ze++
-
-// 	while (ze <= bee) {console.log (ze); ze++;}
-// 	if (ze > bee) {console.log ("try again");}
-// 	else {console.log ("You went tooooooo far!");}
-
-// }
-
-// vroom (100, 104)
-
-// if (i>0 && i<40 && )
-
-
-
-
-
-// Schuster scope global and local
-
-// var knivesCounter = 0;
-// var forksCounter = 0;
-
-// function pack (forks, knives) {
-
-    
-//     var sanitization = function (input) {
-//         if(input === undefined) {
-//             return input = 0;
-//         }
-//         return input;
-//     }
-    
-//     knives = sanitization(knives);
-//     forks = sanitization(forks);
-    
-//     forksCounter += forks;
-//     knivesCounter += knives;
-
-//     if(packedDone()) {
-//         return packedDone();
-//     }
-
-//     return forks + " forks packed\n"+ knives + " knives packed\n";
-// }
-
-
-
-// function packedDone () {
-
-//     // If counters are both greater than 5
-//     if(forksCounter >= 5 && knivesCounter >= 5) {
-//         return "We are all packed";
-//     } else {
-//         return false;
-//     }
-// }
-
-// console.log(pack(1,5));
-// console.log(pack(1));
-// console.log(pack(3,5));
-// console.log("forks Number:", forksCounter);
-// console.log("knives Number:", knivesCounter);
-
-// Schuster Math
-
-// function randomizer (a) {
-//     return Math.floor(Math.random() * a);
-// }
-
-// console.log(randomizer(Number(prompt())));
-
-// Schuster User input
-
-// var userInput = prompt();
-
-// console.log(userInput);
-
-
-// create a variable in the global scope
-// create a function that takes an argument
-// add the argument to the global variable
-// log the return of that function
-// create an IIFE that logs your success of creating an IIFE
-
-// var shake = prompt()
-
-// function sayHello(name) {
-
-// 	console.log (shake + name);}
-
-// sayHello(688799)
-
-
-
-
-// var i = 10;
-// console.log("variable i is " + i);
-// function ReturnZero(name) {
-// 	return name;
-// }
-// i = ReturnZero("Jane");
-// console.log("variable i is " + i);
-
-
-// // IS EVEN
-// function isEven(num) {
-// 	if (num % 2 === 0) {return true;}
-// 	else {return false;}
-	
-// }
-
-// console.log (isEven(6))
-
-
-// function factorial(num){
-// 	var result = 1;
-
-// 	var i = 2; 
-
-// 	While (i <= num) {i++; result * i;};
-
-// 	return result 
-// }
-
-// console.log (factorial(6))
-
-
-
-// THE RANDOM NUMBER GUESSER
-
-var go = prompt()
-
-function prize (num) {
-	var random = Math.random();
-	random = Math.pow
-	var multiply = random * 100;
-	if (go === multiply)
-}
-
-
+var coolDog = dogs.slice (1, 2);
